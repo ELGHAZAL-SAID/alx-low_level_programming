@@ -2,7 +2,7 @@
 
 /**
  *main - Main function => print using printf function 
- *Return : return 0 
+ *Return: return 0 
  */
 
 int main(void)
