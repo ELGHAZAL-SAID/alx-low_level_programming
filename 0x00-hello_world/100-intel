@@ -1,0 +1,2 @@
+#!/bin/bash
+gcc -S hello.c -o $(basename "$CFILE" .C).s
