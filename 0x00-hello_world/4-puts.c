@@ -1,7 +1,8 @@
 #include<stdio.h>
 
 /**
- *printing text using puts function.
+ *main - printing text using puts function.
+ *return: 0
 */
 
 int main(void)
