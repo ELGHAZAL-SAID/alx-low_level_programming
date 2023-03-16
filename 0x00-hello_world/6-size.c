@@ -1,11 +1,9 @@
 #include <stdio.h>
 
 /**
-*
-*main - main function => print size of int, long long int, float, char and  long int data types.
+*main - main function => print size of data types.
 *
 *Return: return 0
-*
 */
 
 int main(void)
