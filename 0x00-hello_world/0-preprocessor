@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc $CFILE -o 0-preprocessor > c
+gcc $CFILE -o c 
