@@ -13,13 +13,9 @@ int main(void)
 	int ch;
 
 	for (ch = 'a'; ch <= 'z'; ch++)
-	{
 		putchar(ch);
-	}
 	for (ch = 'a'; ch <= 'z'; ch++)
-	{
 		putchar((int)ch - 32);
-	}
 	putchar('\n');
 	return (0);
 
