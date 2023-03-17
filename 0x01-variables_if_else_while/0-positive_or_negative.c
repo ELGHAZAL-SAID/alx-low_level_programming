@@ -3,7 +3,7 @@
 #include <time.h>
 
 /**
-* betty style doc for function main goes there 
+*
 *main - main function -> check if a  number is >0 or <0
 *
 *Return: return 0 everytime
