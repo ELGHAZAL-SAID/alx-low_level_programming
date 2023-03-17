@@ -1,12 +1,13 @@
 #include <stdio.h>
 
 /**
- *main - main function -> print quote
- *
- *Return : return 1
- */
+*main - main function -> print quote
+*
+*Return : return 1
+*/
 
-int main(void)
+int main()
 {
-	printf(stderr, "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n");
+	fprintf(stderr, "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n");
+	return (1);
 }
