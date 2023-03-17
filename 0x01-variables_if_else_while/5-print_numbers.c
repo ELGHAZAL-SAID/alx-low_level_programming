@@ -3,7 +3,7 @@
 /**
 *main - main function => print 0 -> 9
 *
-*Return - return 0
+*Return: return 0
 */
 
 int main(void)
