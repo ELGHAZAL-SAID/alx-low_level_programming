@@ -1,7 +1,6 @@
 #include <stdio.h>
 
 /**
-*
 *main - main function => all letters except q and e
 *
 *Return: return 0 every-time
