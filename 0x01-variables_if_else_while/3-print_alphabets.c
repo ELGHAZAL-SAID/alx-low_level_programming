@@ -14,7 +14,10 @@ int main (void){
 	for (ch = 'a'; ch <= 'z'; ch++)
 	{
 		putchar(ch);
-		putchar((int)ch-32);
+	}
+	for (ch = 'a'; ch <= 'z'; ch++)
+	{
+		putchar((int)ch - 32);
 	}
 	putchar('\n');
 	return (0);
