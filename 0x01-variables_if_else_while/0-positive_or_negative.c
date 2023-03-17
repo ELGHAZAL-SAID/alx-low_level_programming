@@ -6,21 +6,20 @@
 *
 *main - main function -> check if a  number is >0 or <0
 *
-*Return: return 0 everytime
+*Return: return 0 every-time
 */
 
 int main(void)
 {
 	int n;
-
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 	/* your code goes there */
-	if (n>0)
+	if (n > 0)
 	{
 		printf("%d is positive\n", n);
 	}
-	else if (n<0)
+	else if (n < 0)
 	{
 		printf("%d is negative\n", n);
 	}	
