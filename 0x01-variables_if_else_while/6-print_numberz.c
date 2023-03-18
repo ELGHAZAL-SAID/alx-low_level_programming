@@ -3,7 +3,7 @@
 /**
 *main - main function => 0->9 using putchar
 *
-*Return: return 0 every-time 
+*Return: return 0 every-time
 */
 
 int main(void)
