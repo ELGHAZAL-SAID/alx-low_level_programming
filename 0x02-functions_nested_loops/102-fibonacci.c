@@ -25,5 +25,6 @@ int main(void)
 		num2 = num;
 		cnt++;
 	}
+	printf(",\n");
 	return (0);
 }
