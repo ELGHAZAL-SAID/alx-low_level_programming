@@ -10,8 +10,8 @@
 int main(void)
 {
 
-	int cnt, num1, num2;
-	long long int num;
+	int cnt;
+	unsigned long int num, num1, num2;
 
 	num = 0;
 	cnt = 0;
@@ -20,7 +20,7 @@ int main(void)
 	while (cnt < 50)
 	{
 		num = num1 + num2;
-		printf("%ld, ", num);
+		printf("%lu, ", num);
 		num1 = num2;
 		num2 = num;
 		cnt++;
