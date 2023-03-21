@@ -1,4 +1,4 @@
-#include "mian.h"
+#include "main.h"
 
 /*
 *_islower - check if an alphabet is lower
