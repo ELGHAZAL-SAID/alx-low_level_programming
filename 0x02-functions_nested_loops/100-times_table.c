@@ -10,9 +10,10 @@ void print_times_table(int n)
 {
 	int i, j, mult;
 
+	if (n < 15 && n >= 0)
+	{
 	for (i = 0; i <= n; i++)
-	{	if (i == 15)
-			break;
+	{	
 		_putchar(48);
 		for (j = 1; j <= n; j++)
 		{
@@ -25,7 +26,7 @@ void print_times_table(int n)
 				_putchar((mult % 100)/10 + '0');
 				_putchar((mult % 10) + '0');
 			}
-			if (mult >= 10 && mult <= 99)
+			else if (mult >= 10 && mult <= 99)
 			{
 				_putchar(32);
 				_putchar(mult / 10 + '0');
@@ -39,5 +40,6 @@ void print_times_table(int n)
 			}
 		}
 		_putchar('\n');
+	}
 	}
 }
