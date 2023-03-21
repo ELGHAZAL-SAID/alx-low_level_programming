@@ -10,13 +10,9 @@ void print_times_table(int n)
 {
 	int i, j, mult;
 
-	if (n = 0)
-	{
-		_putchar(48);
-		break;
-	}
 	for (i = 0; i <= n; i++)
-	{
+	{	if (i == 15)
+			break;
 		_putchar(48);
 		for (j = 1; j <= n; j++)
 		{
