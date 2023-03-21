@@ -16,6 +16,7 @@ void print_times_table(int n)
 		for (j = 1; j <= n; j++)
 		{
 			_putchar(44);
+			_putchar(44);
 			_putchar(32);
 			mult = i * j;
 			if (mult >= 10)
