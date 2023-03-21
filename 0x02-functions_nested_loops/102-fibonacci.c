@@ -3,7 +3,7 @@
 /**
 *main - print first 50 Fibonacci numbers
 *
-*Return - return 0
+*Return: return 0
 *
 */
 
@@ -12,11 +12,10 @@ int main(void)
 
 	int cnt, num, num1, num2;
 
-	num = 0; 
+	num = 0;
 	cnt = 0;
 	num1 = 0;
 	num2 = 1;
-	printf("%d, %d ", num1, num2);
 	while (cnt < 50)
 	{
 		num = num1 + num2;
