@@ -6,7 +6,7 @@
 *Return: nothing
 */
 
-int times_table(void)
+void times_table(void)
 {
 	int i, j, mult;
 
@@ -15,8 +15,15 @@ int times_table(void)
 		for (j = 0; j <= 9; j++)
 		{
 			mult = i * j;
-			_putchar('0' + mult/10);
-			_putchar('0' + mult % 10);
+			if (mult >= 10)
+			{
+				_putchar(mult/10 + '0');
+				_putchar(mult % 10 + '0');
+			}
+			else
+			{
+				_putchar(mult + '0');
+			}
 			if (j != 9)
 			{
 				_putchar(',');
@@ -25,5 +32,6 @@ int times_table(void)
 				_putchar(' ');
 			}
 		}
+		_putchar('\n');
 	}
 }
