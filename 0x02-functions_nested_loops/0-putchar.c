@@ -6,7 +6,7 @@
 *Retrun: always 0
 */
 
-void main()
+int main(void)
 {
 	_putchar('_');
 	_putchar('p');
@@ -17,4 +17,5 @@ void main()
 	_putchar('a');
 	_putchar('r');
 	_putchar('\n');
+	return (0);
 }
