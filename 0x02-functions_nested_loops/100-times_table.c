@@ -2,7 +2,7 @@
 
 /**
 *print_times_table - print times table
-*
+*@n: were to end in table
 *Return: nothing
 */
 
