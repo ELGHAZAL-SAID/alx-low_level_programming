@@ -10,23 +10,19 @@
 int main(void)
 {
 
-	int cnt;
-	unsigned long int num, num1, num2;
+	unsigned long int num, num1, num2, sum;
 
 	num = 0;
-	cnt = 0;
 	num1 = 0;
 	num2 = 1;
-	while (cnt < 50)
+	while (num <= 4000000)
 	{
 		num = num1 + num2;
-		printf("%lu", num);
 		num1 = num2;
 		num2 = num;
-		cnt++;
-		if (cnt < 50)
-			printf(", ");
+		if (num % 2 == 0)
+			sum += num;
 	}
-	printf("\n");
+	printf("%lu\n", sum);
 	return (0);
 }
