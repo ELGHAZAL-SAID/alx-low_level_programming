@@ -21,9 +21,9 @@ void print_times_table(int n)
 			mult = i * j;
 			if (mult >= 100)
 			{
-				_putchar(mult / 100 + 48);
-				_putchar((mult % 100)/10 + 48);
-				_putchar((mult % 10) + 48);
+				_putchar(mult / 100 + '0');
+				_putchar((mult % 100)/10 + '0');
+				_putchar((mult % 10) + '0');
 			}
 			if (mult >= 10 && mult <= 99)
 			{
