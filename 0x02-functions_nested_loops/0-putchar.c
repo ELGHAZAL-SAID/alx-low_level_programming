@@ -3,7 +3,7 @@
 /**
 *main - print _putchar
 *
-*Retrun: return 0 always
+*Return: return 0 always
 */
 
 int main(void)
