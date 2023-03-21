@@ -20,6 +20,6 @@ int main(void)
 		else if (i % 5)
 			sum += i;
 	}
-	printf('%d\n', sum);
+	printf("%d\n", sum);
 	return (1);
 }
