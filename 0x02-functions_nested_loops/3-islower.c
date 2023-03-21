@@ -2,7 +2,7 @@
 
 /*
 *_islower - check if an alphabet is lower
-*
+*@c: int c
 *Return: return 0 or 1
 */
 
