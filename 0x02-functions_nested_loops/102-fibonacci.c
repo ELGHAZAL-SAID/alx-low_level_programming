@@ -20,11 +20,13 @@ int main(void)
 	while (cnt < 50)
 	{
 		num = num1 + num2;
-		printf("%lu, ", num);
+		printf("%lu", num);
 		num1 = num2;
 		num2 = num;
 		cnt++;
+		if (cnt < 50)
+			printf(", ");
 	}
-	printf(",\n");
+	printf("\n");
 	return (0);
 }
