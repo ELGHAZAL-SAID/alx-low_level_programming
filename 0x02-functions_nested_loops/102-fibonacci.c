@@ -10,7 +10,8 @@
 int main(void)
 {
 
-	int cnt, num, num1, num2;
+	int cnt, num1, num2;
+	long int num;
 
 	num = 0;
 	cnt = 0;
@@ -19,7 +20,7 @@ int main(void)
 	while (cnt < 50)
 	{
 		num = num1 + num2;
-		printf("%d, ", num);
+		printf("%ld, ", num);
 		num1 = num2;
 		num2 = num;
 		cnt++;
