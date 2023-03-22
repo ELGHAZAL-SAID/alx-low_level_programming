@@ -20,7 +20,7 @@ int main(void)
 	while (cnt < 98)
 	{
 		num = num1 + num2;
-		printf("%g", num);
+		printf("%g", (double) num);
 		num1 = num2;
 		num2 = num;
 		cnt++;
