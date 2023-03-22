@@ -11,7 +11,7 @@ int main(void)
 {
 
 	int cnt;
-	unsigned long long num, num1, num2;
+	unsigned long int num, num1, num2;
 
 	num = 0;
 	cnt = 0;
