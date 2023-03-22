@@ -11,7 +11,7 @@ int main(void)
 {
 
 	int cnt;
-	double num, num1, num2;
+	unsigned long long num, num1, num2;
 
 	num = 0;
 	cnt = 0;
@@ -20,7 +20,7 @@ int main(void)
 	while (cnt < 98)
 	{
 		num = num1 + num2;
-		printf("%g", (double) num);
+		printf("%llu", num);
 		num1 = num2;
 		num2 = num;
 		cnt++;
