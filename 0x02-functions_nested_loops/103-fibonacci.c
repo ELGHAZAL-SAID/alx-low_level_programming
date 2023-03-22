@@ -10,8 +10,7 @@
 int main(void)
 {
 
-	unsigned long int num, num1, num2;
-	int sum;
+	unsigned long int num, num1, num2, sum;
 
 	num = 0;
 	num1 = 0;
