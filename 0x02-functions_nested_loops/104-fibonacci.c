@@ -11,7 +11,7 @@ int main(void)
 {
 
 	int cnt;
-	float num, num1, num2;
+	double num, num1, num2;
 
 	num = 0;
 	cnt = 0;
@@ -20,7 +20,7 @@ int main(void)
 	while (cnt < 98)
 	{
 		num = num1 + num2;
-		printf("%.0f", num);
+		printf("%g", num);
 		num1 = num2;
 		num2 = num;
 		cnt++;
