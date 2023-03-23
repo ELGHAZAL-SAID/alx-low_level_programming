@@ -3,7 +3,7 @@
 /**
 *print_line - print line in terminal
 *@a: number of times
-*Return: return 1
+*Return: return NOTHING
 */
 
 void print_line(int n)
@@ -13,7 +13,7 @@ void print_line(int n)
 	i = 0;
 	if (!(n <= 0))
 	{
-		while(i < n)
+		while (i < n)
 		{
 			_putchar('_');
 			i++;
