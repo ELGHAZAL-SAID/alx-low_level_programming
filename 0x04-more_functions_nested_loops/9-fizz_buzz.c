@@ -2,11 +2,12 @@
 
 /**
 *main - fizz buzz test printing
-*Return: always 1
+*Return: always 0
 */
 
 int main(void)
 {
+
 	int i;
 
 	for (i = 1; i <= 100; i++)
@@ -22,7 +23,6 @@ int main(void)
 		printf(" ");
 	}
 	printf("\n");
-	return (1);
+	return (0);
 
 }
-
