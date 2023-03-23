@@ -2,7 +2,7 @@
 
 /**
 *print_line - print line in terminal
-*@a: number of times
+*@n: number of times
 *Return: return NOTHING
 */
 
