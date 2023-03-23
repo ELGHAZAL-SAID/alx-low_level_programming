@@ -17,12 +17,12 @@ void more_numbers(void)
 		{
 			if (i >= 10)
 			{
-				_putchar(i / 10 + 32);
 				_putchar(i % 10 + 32);
+				_putchar(i / 10 + 32);
 			}
 			_putchar(i + 32);
 		}
-	_putchar('\n');	
+	_putchar('\n');
 	}
 
 }
