@@ -2,14 +2,12 @@
 #include <string.h>
 
 /**
-*print_rev - print string in reverse
-*
-*@s: string to print
-*
+*rev_string - print string in reverse
+*@s: string to reverse
 *Return: always 0
 */
 
-void print_rev(char *s)
+void rev_string(char *s)
 {
 	int i;
 
@@ -19,3 +17,4 @@ void print_rev(char *s)
 	}
 	printf("\n");
 }
+
