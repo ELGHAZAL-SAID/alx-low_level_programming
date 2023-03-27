@@ -6,14 +6,14 @@
 *Return: always 0
 */
 
-void print_rev(char *s)
+void (char *s)
 {
 	int i;
-	char T[] = *s;
+	char t[] = s;
 
-	for (i = strlen(T) - 1; i >= 0; i--)
+	for (i = strlen(t) - 1; i >= 0; i--)
 	{
-		printf("%s", T[i]);
+		printf("%s", t[i]);
 	}
 	printf("/n");
 }
