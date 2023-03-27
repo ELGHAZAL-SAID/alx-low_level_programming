@@ -11,8 +11,9 @@
 void puts2(char *str)
 {
 	int i;
+	int len = strlen(str);
 
-	for (i = 0; i < strlen(str); i++)
+	for (i = 0; i < len; i++)
 	{
 		if (i % 2 == 0)
 			printf("%c", str[i]);
