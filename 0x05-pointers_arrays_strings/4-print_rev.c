@@ -10,11 +10,10 @@
 void (char *s)
 {
 	int i;
-	char t[] = s;
 
-	for (i = strlen(t) - 1; i >= 0; i--)
+	for (i = strlen(s) - 1; i >= 0; i--)
 	{
-		printf("%c", t[i]);
+		printf("%c", s[i]);
 	}
 	printf("/n");
 }
