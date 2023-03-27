@@ -1,5 +1,6 @@
 #include "main.h"
-
+#include <string.h>
+#include <stdio.h>
 /**
 *puts2 - prints every other character of a string
 *@str: input string to print
@@ -14,5 +15,5 @@ void puts2(char *str)
 		if (i % 2 == 0)
 			printf("%c", str[i]);
 	}
-	putchar('\n');
+	printf("\n");
 }
