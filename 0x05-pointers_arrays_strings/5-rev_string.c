@@ -2,21 +2,24 @@
 #include <string.h>
 
 /**
-*rev_string - print string in reverse
-*@s: string to reverse
+*print_rev - print string in reverse
+*
+*@s: string to print
+*
 *Return: always 0
 */
 
-void rev_string(char *s)
+void print_rev(char *s)
 {
-	int i, j;
-	char c;
+	int i;
+	int len = strlen(s);
+	char *str;
 
-	for (i = strlen(s) - 1, j = 0; i >= 0 && j < strlen(s); i--, j++)
+	str = s;
+
+	for (i = len - 1, j = 0; i >= 0 && j < len; i--, j++)
 	{
-		c = s[i]
-		s[j] = s[i];
+		s[i] = str[j];
 	}
 	printf("\n");
 }
-
