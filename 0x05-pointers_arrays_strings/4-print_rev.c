@@ -11,8 +11,9 @@ void print_rev(char *s)
 	int i;
 	char T[] = s;
 
-	for (i = strlen(T) - 1; i = 0; i--)
+	for (i = strlen(T) - 1; i >= 0; i--)
 	{
-		puts(T[i]);
+		printf("%s", T[i]);
 	}
+	printf("/n");
 }
