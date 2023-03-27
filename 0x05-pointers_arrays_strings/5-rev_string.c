@@ -9,17 +9,19 @@
 *Return: always 0
 */
 
-void print_rev(char *s)
+void rev_string(char *s)
 {
-	int i;
+	int i = 0;
 	int len = strlen(s);
-	char *str;
+	char str;
 
-	str = s;
-
-	for (i = len - 1, j = 0; i >= 0 && j < len; i--, j++)
+	while (len > i)
 	{
-		s[i] = str[j];
+		len--;
+		str = s[len];
+		s[len] = s[i];
+		s[i] = str;
+		i++;
 	}
-	printf("\n");
+
 }
