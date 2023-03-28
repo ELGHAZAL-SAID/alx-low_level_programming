@@ -3,7 +3,7 @@
 #include "main.h"
 
 /**
-* *_strcpy - copy string from a var to distination
+* *_strcpy - copy string from a var to destination
 * @src: to copy form
 * @dest: to copy to
 * Return: dest
