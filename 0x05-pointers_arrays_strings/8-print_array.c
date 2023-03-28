@@ -14,7 +14,7 @@ void print_array(int *a, int n)
 
 	for (i = 0; i < n; i++)
 	{
-		print("%d", a);
+		printf("%d", a);
 		if (_strlen(a) != i + 1)
 			printf(", ");
 	}
