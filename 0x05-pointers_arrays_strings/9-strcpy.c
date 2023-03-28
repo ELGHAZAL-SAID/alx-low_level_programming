@@ -3,10 +3,10 @@
 #include "main.h"
 
 /**
-**_strcpy - copy string from a var to distination
-*@src: to copy form
-*@des: to copy to
-*Return: dest
+* *_strcpy - copy string from a var to distination
+* @src: to copy form
+* @dest: to copy to
+* Return: dest
 */
 
 
