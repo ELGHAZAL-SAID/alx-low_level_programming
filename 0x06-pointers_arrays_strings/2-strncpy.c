@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
-* *_strncat - concatinates two strings
+* *_strncpy - concatinates two strings
 * @dest: vat to append to
 * @src: var to be appended to
 * @n: number of chars to append
