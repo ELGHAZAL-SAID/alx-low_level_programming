@@ -28,9 +28,15 @@ int _strcmp(char *s1, char *s2)
 		if (*(s1 + i) == *(s2 + i))
 			j++;
 		else if (*(s1 + i) > *(s2 + i))
+		{
 			return (15);
-		else 
+			break;
+		}
+		else
+		{
 			return (-15);
+			break;
+		}
 	}
 	if (j == ls2)
 		return (0);
