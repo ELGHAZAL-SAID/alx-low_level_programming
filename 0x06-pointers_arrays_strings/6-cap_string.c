@@ -18,7 +18,7 @@ char *cap_string(char *s)
 	x = t;
 	while (*(s + i) != 0)
 	{
-		for (j = 0; *(x + j); j++)
+		for (j = 0; j < sizeof(t); j++)
 		{
 			if (*(s + i) == *(x + j))
 			{
