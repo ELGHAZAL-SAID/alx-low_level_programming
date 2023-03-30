@@ -12,10 +12,9 @@ char *leet(char *s)
 	char t[] = {97, 101, 111, 108, 116};
 	char f[] = {52, 51, 49, 48, 55};
 
-
 	while (*(s + i) != 0)
 	{
-		for (j = 0; j < 5; j++)
+		for (j = j; j < 5; j++)
 		{
 			if (*(s + i) == t[j] || *(s + i) == t[j] - 32)
 			{
@@ -24,5 +23,7 @@ char *leet(char *s)
 		}
 		i++;
 	}
+
 	return (s);
+
 }
