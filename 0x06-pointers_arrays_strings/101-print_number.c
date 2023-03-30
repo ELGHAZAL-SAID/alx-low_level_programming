@@ -10,7 +10,6 @@
 
 void print_number(int n)
 {
-	int i = 0, j, div = 0;
 
 	if (n < 0)
 	{
@@ -21,4 +20,5 @@ void print_number(int n)
 		print_number(n / 10);
 	_putchar(n % 10 + 0);
 	_putcahr(10);
+
 }
