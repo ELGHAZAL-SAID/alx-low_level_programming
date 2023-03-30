@@ -22,7 +22,12 @@ int _strcmp(char *s1, char *s2)
 		return (15);
 	else if (ls2 > ls1)
 		return (-15);
-	else
-		return (0);
+	for (i = 0; i < ls2; i++)
+	{
+		if (*(s1 + i) == *(s2 + i))
+			return (0);
+		else
+			return (-15);
+	}
 }
 
