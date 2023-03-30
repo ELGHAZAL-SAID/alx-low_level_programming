@@ -12,20 +12,27 @@ void print_number(int n)
 {
 	int i = 0, j, div = 0;
 
+	if (n < 0)
+	{
+		_putcahr('-');
+		n = -n;
+	}
 
 	while (n > 0)
 	{
 		n = n / 10;
 		i++;
 	}
-	
+
 	div = pow(10, i);
 
 	for (j = 0; j < i; j++)
 	{
-		if (i != 0)
+
+		if (i == 0)
 			_putchar((i / div) + 0);
 		else
-			_putchar((i / (div / 10)));
+			_putchar((i / (div / 10)) + 0);
 	}
+	_putcahr(10);
 }
