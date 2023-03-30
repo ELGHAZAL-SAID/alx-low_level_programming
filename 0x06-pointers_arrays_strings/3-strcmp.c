@@ -18,11 +18,6 @@ int _strcmp(char *s1, char *s2)
 	while (*(s2 + ls2) != 0)
 		ls2++;
 
-	if (ls1 > ls2)
-		return (15);
-	else if (ls2 > ls1)
-		return (-15);
-
 	for (i = 0; i < ls2; i++)
 	{
 		if (*(s1 + i) == *(s2 + i))
