@@ -1,5 +1,4 @@
 #include "mian.h"
-#include <math.h>
 
 /**
 * print_number - print integers
