@@ -10,7 +10,7 @@
 
 char *cap_string(char *s)
 {
-	int i = 0;
+	int i = 0, j;
 
 	char t[] = {32, 9, 59, 10, 44, 46, 63, 33, 34, 40, 41, 123, 125};
 	char *x;
@@ -18,7 +18,7 @@ char *cap_string(char *s)
 	x = t;
 	while (*(s + i) != 0)
 	{
-		for (int j = 0; j < sizeof(t); j++)
+		for (j = 0; *(x + j); j++)
 		{
 			if (*(s + i) == *(x + j))
 			{
