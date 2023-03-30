@@ -14,11 +14,12 @@ char *leet(char *s)
 
 	while (*(s + i) != 0)
 	{
-		for (j = j; j < 5; j++)
+		for (j = 0; j < 5; j++)
 		{
 			if (*(s + i) == t[j] || *(s + i) == t[j] - 32)
 			{
 				*(s + i) = f[j];
+				break;
 			}
 		}
 		i++;
