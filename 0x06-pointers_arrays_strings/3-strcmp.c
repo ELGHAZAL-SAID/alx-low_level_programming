@@ -22,14 +22,17 @@ int _strcmp(char *s1, char *s2)
 		return (15);
 	else if (ls2 > ls1)
 		return (-15);
+
 	for (i = 0; i < ls2; i++)
 	{
 		if (*(s1 + i) == *(s2 + i))
 			j++;
+		else if (*(s1 + i) > *(s2 + i))
+			return (15);
+		else 
+			return (-15);
 	}
 	if (j == ls2)
 		return (0);
-	else
-		return (-15);
 }
 
