@@ -10,7 +10,7 @@
 int _strcmp(char *s1, char *s2)
 {
 
-	int ls1 = 0, ls2 = 0, i = 0, j = 0, k = 0;
+	int ls1 = 0, ls2 = 0, i = 0, k = 0;
 
 	while (*(s1 + ls1) != 0)
 		ls1++;
@@ -24,18 +24,15 @@ int _strcmp(char *s1, char *s2)
 		k = ls1;
 	for (i = 0; i < k; i++)
 	{
-		if (*(s1 + i) == *(s2 + i))
-			j++;
-		else if (*(s1 + i) > *(s2 + i))
+		if (*(s1 + i) > *(s2 + i))
 		{
 			return (15);
 		}
-		else
+		else if (*(s1 + i) < *(s2 + i))
 		{
 			return (-15);
 		}
 	}
-	if (j == ls2)
-		return (0);
+	return (0);
 }
 
