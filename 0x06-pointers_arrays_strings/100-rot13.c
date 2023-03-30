@@ -14,7 +14,7 @@ char *rot13(char *str)
 	char chars[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
 	char rot13[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
 
-	while(*(str + i) != 0)
+	while (*(str + i) != 0)
 	{
 		for (j = 0; *(chars + j); j++)
 		{
