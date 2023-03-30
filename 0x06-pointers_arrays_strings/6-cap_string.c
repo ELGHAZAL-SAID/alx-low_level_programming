@@ -16,6 +16,11 @@ char *cap_string(char *s)
 	char *x;
 
 	x = t;
+
+	if (*(s + (i + 1)) >= 97 && *(s + (i + 1)) <= 122)
+		*(s + (i + 1)) = *(s + (i + 1)) - 32;
+	i++;
+
 	while (*(s + i) != 0)
 	{
 		for (j = 0; *(x + j); j++)
