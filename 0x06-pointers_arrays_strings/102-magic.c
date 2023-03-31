@@ -1,5 +1,11 @@
 #include <stdio.h>
 
+/**
+* main - change table value without using its name or addrs
+*
+* Return: always 0
+*/
+
 int main(void)
 {
 	int n;
