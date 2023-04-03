@@ -9,7 +9,7 @@
 
 char *_strchr(char *s, char c)
 {
-	int i, len = sizeof(s);
+	unsigned int i, len = sizeof(s);
 
 	for (i = 0; i < len; i++)
 	{
