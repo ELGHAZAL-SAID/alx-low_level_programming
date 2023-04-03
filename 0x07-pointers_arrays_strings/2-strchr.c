@@ -10,15 +10,20 @@
 char *_strchr(char *s, char c)
 {
 	unsigned int i;
+	int check = 0;
 	
 	while (*(s + i) != 0)
 	{
 		if (*(s + i) == c)
-			return (s + i);
+		{
+			check = 1;
+			break;
+		}
 		i++;
 	}
-	if (*(s + i) == c)
+	if (check == 1)
 		return (s + i);
+	else
+		return (0);
 
-	return (0);
 }
