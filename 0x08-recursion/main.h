@@ -9,6 +9,7 @@ int is_prime_number(int n);
 int _prime(int num, int y);
 int is_palindrome(char *s);
 int _palindrome(int start, int end, char *string);
+int wildcmp(char *s1, char *s2);
 
 
 
