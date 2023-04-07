@@ -1,5 +1,5 @@
 |content |
-|-----------------------------------------------------------|
+|-----------------------------------------------------------------------------------------------|
 |Hello world| starting c |
 |variables & if else statements & loops |
 |functions and nested loops|
