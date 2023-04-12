@@ -9,7 +9,7 @@
 
 char *str_concat(char *s1, char *s2)
 {
-	int len, i = 0, j = 0, k = 0;
+	int len, i = 0, j = 0, k = 0, l = 0;
 	char *t;
 
 	if (s1 != 0)
@@ -32,10 +32,11 @@ char *str_concat(char *s1, char *s2)
 		t[k] = s1[k];
 		k++;
 	}
-	while (k < j)
+	while (l < j)
 	{
-		t[k] = s2[k];
+		t[k] = s2[l];
 		k++;
+		l++;
 	}
 	return (t);
 }
