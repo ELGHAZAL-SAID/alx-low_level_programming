@@ -15,17 +15,11 @@ char *str_concat(char *s1, char *s2)
 	if (s1 != 0)
 		while (*(s1 + i) != 0)
 			i++;
-	else
-		i = 0;
-
 	len = i;
 
 	if (s2 != 0)
 		while (*(s2 + j) != 0)
 			j++;
-	else
-		j = 0;
-
 	len += j;
 
 	t = malloc(len + 1);
@@ -41,11 +35,10 @@ char *str_concat(char *s1, char *s2)
 		t[k] = s1[k];
 		k++;
 	}
-	while (j >= 0)
+	while (k < j)
 	{
-		t[len] = s2[j];
-		j--;
-		len--;
+		t[k] = s2[k];
+		k++;
 	}
 	return (t);
 }
