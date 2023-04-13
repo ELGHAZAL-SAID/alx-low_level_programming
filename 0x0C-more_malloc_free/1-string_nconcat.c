@@ -15,17 +15,13 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	unsigned int i = 0, j = 0, len = 0;
 
 	if (s1 != 0)
-	{
 		while (*(s1 + i) != 0)
 		i++;
-	}
 	len = i;
 
 	if (s2 != 0)
-	{
 		while (*(s2 + j) != 0)
 			j++;
-	}
 	if (n >= j)
 		len += j;
 	else
@@ -51,6 +47,6 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		i++;
 		j++;
 	}
-	*(t + len) = 0;
+	*(t + (len + 1)) = 0;
 	return (t);
 }
