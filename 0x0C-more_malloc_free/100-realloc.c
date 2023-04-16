@@ -1,5 +1,5 @@
 #include "main.h"
-#include <string.h>
+
 /**
 * _realloc - reallocate e memory block
 * @ptr: pointer to the memory allocated
