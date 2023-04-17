@@ -23,7 +23,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 		i++;
 	len_name = i;
 	i = 0;
-	while (*(name + i))
+	while (*(owner + i))
 		i++;
 	len_owner = i;
 	(*d).name = malloc(len_name + 1);
