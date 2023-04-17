@@ -21,7 +21,7 @@ struct dog
 * dog_g - Typedef for struct dog.
 */
 
-typedef struct dog do_g;
+typedef struct dog dog_t;
 
 /*
 * functions prototypes:
