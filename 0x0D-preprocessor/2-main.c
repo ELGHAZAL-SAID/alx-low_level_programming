@@ -1,1 +1,13 @@
+#include <stdio.h>
 
+/**
+* main - print the file name 
+*
+* Return 0
+*/
+
+
+int main()
+{
+	printf("%s \n",__FILE__);
+}
