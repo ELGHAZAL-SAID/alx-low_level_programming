@@ -1,13 +1,11 @@
 #include "3-calc.h"
 
-
 /**
 * main - performs simple operations
 * @argc: args counter
 * @argv: array of args
 * Return: 0
 */
-
 
 int main(int argc, char *argv[])
 {
