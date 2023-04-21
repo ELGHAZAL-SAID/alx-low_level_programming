@@ -6,15 +6,27 @@
 #include <string.h>
 
 /**
-* struct op - type of data
+* struct ops - type of data
 * @type: type name
 * @f: pointer to function
 */
-typedef struct op
+typedef struct ops
 {
 	char *type;
 	void (*f)(va_list arg);
 } opt;
+
+/**
+ * struct op - struct with name op.
+ * @ch: the type.
+ * @f: the call back function.
+ */
+
+typedef struct op
+{
+        char *ch;
+        void (*f)(va_list arg);
+} op;
 
 
 int sum_them_all(const unsigned int n, ...);
