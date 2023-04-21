@@ -45,7 +45,10 @@ void get_string_type(va_list arg)
 
 	value = va_arg(arg, char *);
 	if (value == 0)
+	{
 		printf("(nil)");
+		return;
+	}
 	printf("%s", value);
 }
 

@@ -5,6 +5,11 @@
 #include <stdarg.h>
 #include <string.h>
 
+/**
+* struct op - type of data
+* @type: type name
+* @f: pointer to function
+*/
 typedef struct op
 {
 	char type;
