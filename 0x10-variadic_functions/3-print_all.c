@@ -82,13 +82,15 @@ void print_all(const char * const format, ...)
 	{
 		j = 0;
 
-		while (j < 4 && (*(format + i) != *(ftype[j].type)))
-			j++;
-		if (j < 4)
+		while (j < 4)
 		{
-			printf("%s", separator);
-			ftype[j].f(arg);
-			separator = ", ";
+			if ((*(format + i) == *(ftype[j].type)))
+			{
+				printf("%s", separator);
+				ftype[j].f(arg);
+				separator = ", ";
+			}
+			j++;
 		}
 		i++;
 	}
