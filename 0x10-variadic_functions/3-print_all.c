@@ -68,7 +68,7 @@ void print_all(const char * const format, ...)
 	char *separator = "";
 	va_list args;
 
-	op ftype[] = {
+	opt ftype[] = {
 		{"c", get_char_type},
 		{"i", get_int_type},
 		{"f", get_float_type},
