@@ -34,9 +34,7 @@ void get_int_type(va_list arg)
 
 void get_float_type(va_list arg)
 {
-	float value = va_arg(arg, double);
-
-	printf("%f", value);
+	printf("%f", va_arg(arg, double));
 }
 
 /**
