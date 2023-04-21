@@ -66,7 +66,7 @@ void print_all(const char * const format, ...)
 {
 	int i = 0, j;
 	char *separator = "";
-	va_list arg;
+	va_list args;
 
 	op ftype[] = {
 		{"c", get_char_type},
@@ -75,23 +75,22 @@ void print_all(const char * const format, ...)
 		{"s", get_string_type}
 	};
 
-	va_start(arg, format);
+	va_start(args, format);
 	while (*(format + i) && format)
 	{
 		j = 0;
 
-		while (j < 4)
-		{
-			if ((*(format + i) == *(ftype[j].type)))
-			{
-				printf("%s", separator);
-				ftype[j].f(arg);
-				separator = ", ";
-			}
+		while (j < 4 && (*(format + i) != *(ftype[j].type)))
 			j++;
+		if (j < 4)
+		{
+			printf("%s", separator);
+			ftype[j].f(args);
+			separator = ", ";
 		}
+
 		i++;
 	}
 	printf("\n");
-	va_end(arg);
+	va_end(args);
 }
