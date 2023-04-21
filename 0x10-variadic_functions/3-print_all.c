@@ -50,7 +50,7 @@ void get_string_type(va_list arg)
 	char *value;
 
 	value = va_arg(arg, char *);
-	if (value == 0)
+	if (!value)
 	{
 		printf("(nil)");
 		return;
@@ -78,7 +78,7 @@ void print_all(const char * const format, ...)
 	};
 
 	va_start(arg, format);
-	while (*(format + i) != 0 && format != 0)
+	while (*(format + i) && format)
 	{
 		j = 0;
 
