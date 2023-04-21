@@ -71,10 +71,10 @@ void print_all(const char * const format, ...)
 	va_list arg;
 
 	op ftype[] = {
-		{'c', get_char_type},
-		{'i', get_int_type},
-		{'f', get_float_type},
-		{'s', get_string_type}
+		{"c", get_char_type},
+		{"i", get_int_type},
+		{"f", get_float_type},
+		{"s", get_string_type}
 	};
 
 	va_start(arg, format);
@@ -82,7 +82,7 @@ void print_all(const char * const format, ...)
 	{
 		j = 0;
 
-		while (j < 4 && (format[i] != ftype[j].type))
+		while (j < 4 && (*(format + i) != *(ftype[j].type)))
 			j++;
 		if (j < 4)
 		{
