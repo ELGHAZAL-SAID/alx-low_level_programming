@@ -1,7 +1,7 @@
 #include "variadic_functions.h"
 
 /**
-* get_chat_type - print char type
+* get_char_type - print char type
 * @arg: list of args
 * Return: 0;
 */
