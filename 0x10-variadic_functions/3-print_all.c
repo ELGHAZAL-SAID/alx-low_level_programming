@@ -21,8 +21,9 @@ void get_char_type(va_list arg)
 
 void get_int_type(va_list arg)
 {
-	int value = va_arg(arg, int);
+	int value;
 
+	value = va_arg(arg, int);
 	printf("%d", value);
 }
 
@@ -34,7 +35,10 @@ void get_int_type(va_list arg)
 
 void get_float_type(va_list arg)
 {
-	printf("%f", va_arg(arg, double));
+	float value;
+ 
+	value = va_arg(arg, double);
+	printf("%f", value);
 }
 
 /**
