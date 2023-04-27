@@ -9,16 +9,13 @@
 
 list_t *add_node(list_t **head, const char *str)
 {
-	list_t *tmp = *head;
-
+	list_t tmp;
 
 	if (str == 0)
 		return (0);
-	tmp->str = strdup(str);
-	tmp->len = strlen(str);
-	tmp->next = *head;
-
-	*head = tmp;
-
+	tmp.str = strdup(str);
+	tmp.len = strlen(str);
+	tmp.next = *head;
+	*head = &tmp;
 	return (*head);
 }
