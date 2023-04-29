@@ -10,7 +10,7 @@ size_t print_listint(const listint_t *h)
 {
 	int i = 0;
 
-	if (h == 0)
+	if (h == NULL)
 	{
 		printf("(nil)");
 		return (0);
