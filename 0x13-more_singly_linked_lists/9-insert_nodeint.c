@@ -1,5 +1,7 @@
 #include "lists.h"
 
+size_t list_len(const listint_t *h);
+
 /**
 * insert_nodeint_at_index - insert new node at the given position
 * @head: pointer to pointer of linked list
@@ -8,8 +10,6 @@
 * Return: pointer to new linked list
 *
 */
-
-size_t list_len(const listint_t *h);
 
 listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 {
@@ -51,7 +51,7 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 }
 
 /**
-* listint_len - returns the len of a linked list
+* list_len - returns the len of a linked list
 * @h: linked list
 * Return: 0
 *
