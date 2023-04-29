@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
-* listint_len - returns the len of a linked list 
+* listint_len - returns the len of a linked list
 * @h: linked list
 * Return: 0
 *
@@ -16,5 +16,5 @@ size_t listint_len(const listint_t *h)
 		i++;
 		h = h->next;
 	}
-	return(i);
+	return (i);
 }
