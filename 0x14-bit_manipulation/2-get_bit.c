@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
- * get_git - returns the value of a bit at a given index.
- * 
- * 
- * 
+ * get_bit - returns the value of a bit at a given index.
+ * @index: index of the bit
+ * @n: number to convert
+ * Return: bit at the given index
 */
 
 int get_bit(unsigned long int n, unsigned int index)
