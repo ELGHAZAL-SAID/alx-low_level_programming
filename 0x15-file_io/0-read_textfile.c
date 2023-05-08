@@ -9,16 +9,13 @@
 
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-	int id, sc, r;
+	ssize_t id, sc, r;
 	char *handler;
 
 	handler = malloc(letters * sizeof(char));
 
 	if (filename == 0 || handler == 0)
-	{
-		free(handler);
 		return (0);
-	}
 
 	id = open(filename, O_RDONLY);
 
