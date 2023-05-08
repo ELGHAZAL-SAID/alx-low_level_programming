@@ -26,7 +26,7 @@ int create_file(const char *filename, char *text_content)
 			return (-1);
 	}
 
-	close (id);
+	close(id);
 
 	return (1);
 }
