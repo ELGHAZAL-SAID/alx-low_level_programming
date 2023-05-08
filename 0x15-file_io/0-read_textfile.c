@@ -12,13 +12,15 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	ssize_t id, sc, r;
 	char *handler;
 
+	if (filename == 0)
+		return (0);
+
 	handler = malloc(letters * sizeof(char));
 
-	if (filename == 0 || handler == 0)
+	if (handler == 0)
 		return (0);
 
 	id = open(filename, O_RDONLY);
-
 
 	r = read(id, handler, letters);
 
