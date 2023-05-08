@@ -25,14 +25,14 @@ ssize_t read_textfile(const char *filename, size_t letters)
 
 	r = read(id, handler, letters);
 
-	sc = write(1, handler, letters);
+	sc = write(1, handler, r);
 
-	if (sc < 0 || r < 0 || r < 0)
+	if (sc < 0 || id < 0 || r < 0 || sc != r)
 	{
-		free (handler);
+		free(handler);
 		return (0);
 	}
 	free(handler);
-	close (id);
+	close(id);
 	return (sc);
 }
