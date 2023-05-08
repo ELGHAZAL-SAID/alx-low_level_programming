@@ -26,7 +26,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 
 	sc = write(1, handler, r);
 
-	if (sc == -1 || id == -1 || r == -1 || sc != r)
+	if (id < 0 || sc == -1)
 	{
 		free(handler);
 		return (0);
