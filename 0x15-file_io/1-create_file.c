@@ -12,7 +12,7 @@ int create_file(const char *filename, char *text_content)
 	int id, w;
 
 	if (filename == 0)
-		return (0);
+		return (-1);
 
 	id = open(filename, O_WRONLY | O_CREAT | O_EXCL, 0600);
 
@@ -23,8 +23,10 @@ int create_file(const char *filename, char *text_content)
 	{
 		w = write(id, text_content, strlen(text_content));
 		if (w == -1)
-			return (0);
+			return (-1);
 	}
+
+	close (id);
 
 	return (1);
 }
