@@ -19,12 +19,9 @@ int create_file(const char *filename, char *text_content)
 	if (id == -1)
 		return (-1);
 
-	if (text_content != 0)
-	{
-		w = write(id, text_content, strlen(text_content));
-		if (w == -1)
-			return (-1);
-	}
+	w = write(id, text_content, strlen(text_content));
+	if (w == -1)
+		return (-1);
 
 	close(id);
 
