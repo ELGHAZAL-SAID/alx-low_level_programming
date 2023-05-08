@@ -9,24 +9,30 @@
 
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-	int id, sc;
+	int id, sc, r;
 	char *handler;
 
 	handler = malloc(letters * sizeof(char));
 
 	if (filename == 0 || handler == 0)
+	{
+		free(handler);
 		return (0);
+	}
 
 	id = open(filename, O_RDONLY);
 
-	if (id < 0)
+
+	r = read(id, handler, letters);
+
+	sc = write(1, handler, letters);
+
+	if (sc < 0 || r < 0 || r < 0)
+	{
+		free (handler);
 		return (0);
-
-	sc = read(id, handler, letters);
-
-	write(1, handler, letters);
-
-	if (sc < 0)
-		return (0);
+	}
+	free(handler);
+	close (id);
 	return (sc);
 }
