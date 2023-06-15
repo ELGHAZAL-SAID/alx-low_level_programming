@@ -1,34 +1,53 @@
 #include "lists.h"
-/**
- * delete_dnodeint_at_index - deletes node index dlistint_t linked list
- * @head: pointer to pointer to the head of the list
- * @index: index of the node to be deleted
- * Return: 1 if succeeded, -1 if failed
- */
-int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
-{
-	dlistint_t *current, *temp;
-	unsigned int i;
 
-	if (*head == NULL)
-		return (-1);
-	current = *head;
-	if (index == 0)
+/**
+* insert_dnodeint_at_index - add node at index
+* @h: pointer to pointer to dlinked list
+* @idx: index to add at
+* @n: number to add
+* Return: new node or null if it failed
+*/
+
+dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
+{
+	unsigned int i = 0;
+	dlistint_t *head = *h, *new;
+
+	new = malloc(sizeof(dlistint_t));
+	if (new == NULL)
+		return (NULL);
+	new->n = n, new->prev = NULL, new->next = NULL;
+	if (*h == NULL && idx == 0)
 	{
-		*head = current->next;
-		if (*head != NULL)
-			(*head)->prev = NULL;
-		free(current);
-		return (1);
+		*h = new;
+		return (new);
 	}
-	for (i = 0; current != NULL && i < index; i++)
-		current = current->next;
-	if (current == NULL)
-		return (-1);
-	temp = current->prev;
-	temp->next = current->next;
-	if (current->next != NULL)
-		current->next->prev = temp;
-	free(current);
-	return (1);
+	while (head != NULL && i < idx)
+	{
+		if (head->next == NULL && i + 1 == idx)
+		{
+			head->next = new, new->prev = head;
+			return (new);
+		}
+
+		head = head->next;
+		i++;
+	}
+
+	if (head == NULL && i < idx)
+	{
+		free(new);
+		return (NULL);
+	}
+
+	if (head->prev == NULL)
+		*h = new;
+	else
+	{
+		head->prev->next = new;
+		new->prev = head->prev;
+	}
+	new->next = head;
+	head->prev = new;
+	return (new);
 }
