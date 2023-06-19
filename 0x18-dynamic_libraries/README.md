@@ -149,8 +149,8 @@ julien@ubuntu:~/0x18. Dynamic libraries$
 
 ***Repo:***
 
--	GitHub repository: alx-low_level_programming
--	Directory: 0x18-dynamic_libraries
--	File: libdynamic.so, main.h
+-	GitHub repository: `alx-low_level_programming`
+-	Directory: `0x18-dynamic_libraries`
+-	File: `libdynamic.so`, `main.h`
 
 
