@@ -4,7 +4,7 @@
 
 ## Resources
 
-*** Read or watch: ***
+***Read or watch:***
 
 -	[What is difference between Dynamic and Static library (Static and Dynamic linking)](https://intranet.alxswe.com/rltoken/XLLmLISlteUIxrLzNdm3_Q)
 -	[create dynamic libraries on Linux](google.com)
