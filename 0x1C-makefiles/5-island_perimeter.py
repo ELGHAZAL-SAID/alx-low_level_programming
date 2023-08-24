@@ -3,7 +3,6 @@
 """_summary_
 """
 
-
 def island_perimeter(grid):
     """_summary_
 
@@ -13,29 +12,24 @@ def island_perimeter(grid):
     Returns:
         _type_: _description_
     """
-
     if not grid or not grid[0]:
         return 0
 
     perimeter = 0
-    col = len(grid)
-    rows = len(grid[0])
+    rows = len(grid)
+    cols = len(grid[0])
 
-    for i in range(col):
-        for j in range(rows - 1):
+    for i in range(rows):
+        for j in range(cols):
             if grid[i][j] == 1:
-                perimeter += 2
-                if grid[i][j + 1] == 0:
-                    continue
-                else:
-                    break
+                perimeter += 4
 
-    for i in range(rows - 1):
-        for j in range(col):
-            if grid[j][i] == 1:
-                perimeter += 2
-                if grid[j][i + 1] == 1:
-                    break
-                break
+                # Check left cell
+                if j > 0 and grid[i][j - 1] == 1:
+                    perimeter -= 2
+
+                # Check upper cell
+                if i > 0 and grid[i - 1][j] == 1:
+                    perimeter -= 2
 
     return perimeter
